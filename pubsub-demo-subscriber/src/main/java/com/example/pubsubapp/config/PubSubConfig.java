@@ -21,7 +21,7 @@ public class PubSubConfig {
             MessageChannel inputMessageChannel) {
 
         PubSubInboundChannelAdapter adapter =
-                new PubSubInboundChannelAdapter(subscriberTemplate, "user-notification-sub");
+                new PubSubInboundChannelAdapter(subscriberTemplate, "ds-user-notification-sub");
         adapter.setOutputChannel(inputMessageChannel);
         return adapter;
     }

@@ -13,7 +13,7 @@ public class NotificationController {
     @Autowired
     private PubSubTemplate pubSubTemplate;
 
-    private static final String TOPIC = "user-notifications";
+    private static final String TOPIC = "ds-user-notifications";
 
     @PostMapping
     public ResponseEntity<String> publishMessage(@RequestBody Notification notification) {
